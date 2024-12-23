@@ -1,7 +1,6 @@
 'use client'
 
 import { useRouter } from 'next/navigation'
-import { useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Button from '@/components/ui/Button'
@@ -60,7 +59,7 @@ export default function IndexPage() {
           <h1 className="mx-auto my-8 pt-12 text-center text-4xl font-bold tracking-tighter text-white">
             I Locali
           </h1>
-          <h2 className="mb-16 text-center text-xl font-semibold tracking-tighter text-white">
+          <h2 className="mb-16 text-center text-xl font-semibold tracking-tighter text-white pad:mx-5">
             Per orari, info e prenotazioni, clicca sulla foto del locale di tuo
             interesse
           </h2>
@@ -160,7 +159,7 @@ export default function IndexPage() {
           <h1 className="mb-4 text-4xl font-semibold tracking-tighter text-white">
             Dicono di noi
           </h1>
-          <div className="dark:bg-grid-white/[0.05] max-[550px]:h-[40rem] relative flex h-[30rem] flex-col items-center justify-center overflow-hidden rounded-md bg-[#282828] antialiased dark:bg-black">
+          <div className="relative flex h-[30rem] flex-col items-center justify-center overflow-hidden rounded-md bg-[#282828] antialiased pad:h-[40rem]">
             <InfiniteMovingCards
               items={testimonials}
               direction="right"

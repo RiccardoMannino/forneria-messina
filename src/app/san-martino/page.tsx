@@ -10,7 +10,7 @@ import Clock from '../../assets/clock.svg'
 import Facebook from '../../assets/brand-facebook.svg'
 import Instagram from '../../assets/brand-instagram.svg'
 import Trip from '../../assets/brand-tripadvisor.svg'
-import Logo from '../../assets/LOGO_sanmartino.png'
+import Logo from '../../assets/logo_sanmartino.png'
 
 export default function MonrealePage() {
   const {
@@ -21,7 +21,7 @@ export default function MonrealePage() {
   } = useForm()
   return (
     <>
-      <Section className="mt-28 flex h-[600px] w-full items-center justify-center bg-[url(../assets/background_sanmartino.png)] bg-cover">
+      <Section className="mt-36 flex h-[600px] w-full items-center justify-center bg-[url(../assets/background_sanmartino.png)] bg-cover">
         <Image
           src={Logo}
           alt="Palermo"
@@ -30,7 +30,7 @@ export default function MonrealePage() {
           className="h-auto w-auto"
         />
       </Section>
-      <Section className="m-20 grid grid-cols-2 font-semibold pad:grid pad:grid-cols-1">
+      <Section className="m-20 grid grid-cols-2 gap-6 font-semibold pad:m-10 pad:grid pad:grid-cols-1">
         <div className="flex flex-col gap-6 text-lg text-white pad:text-center">
           <h1 className="">Partecipa ai nostri eventi!</h1>
           <h2 className="">Sei già stato alla Forneria Messina?</h2>

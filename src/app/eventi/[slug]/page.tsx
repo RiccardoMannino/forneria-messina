@@ -8,6 +8,7 @@ import React from 'react'
 
 export default function Evento() {
   const { slug } = useParams()
+  console.log(slug)
 
   const { data: eventi, isLoading, isError } = useEventoQuery(slug as string)
 
@@ -15,11 +16,9 @@ export default function Evento() {
     const paragraphs = (
       <div>
         {description?.split('\n').map((para, index) => (
-          <>
-            <p className="mb-4" key={index}>
-              {para}
-            </p>
-          </>
+          <p className="mb-4 text-justify pad:mb-8 pad:text-center" key={para}>
+            {para}
+          </p>
         ))}
       </div>
     )

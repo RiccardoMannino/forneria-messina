@@ -11,7 +11,7 @@ import Button from '@/components/ui/Button'
 export default function PalermoPage() {
   return (
     <>
-      <div className="mt-28 flex h-[600px] w-full items-center justify-center bg-[url(../assets/background_palermo.png)] bg-cover">
+      <div className="mt-36 flex h-[600px] w-full items-center justify-center bg-[url(../assets/background_palermo.png)] bg-cover">
         <Image src="/LOGO_PALERMO.png" alt="Palermo" width={400} height={400} />
       </div>
       <section className="my-20 flex flex-col gap-6 text-white phone:mx-5 sm:mx-10 md:mx-20">
@@ -129,7 +129,7 @@ export default function PalermoPage() {
             <Image src={Pin} alt="Indirizzo" width={50} height={50} />
             <p>Indirizzo</p>
             <p>
-              (PA) Viale Delle Alpi 4 <br />
+              Viale Delle Alpi 4 <br />
               90144 Palermo (PA)
             </p>
           </div>
