@@ -6,8 +6,6 @@ import Footer from '@/components/ui/Footer'
 import Section from '@/components/ui/Section'
 
 export default function PalermoPage() {
-  const path = usePathname()
-
   return (
     <>
       <div className="mt-36 flex h-[600px] w-full items-center justify-center bg-[url(../assets/background_palermo.png)] bg-cover">
@@ -116,10 +114,7 @@ export default function PalermoPage() {
         </div>
       </Section>
 
-      <Footer
-        id="contatti"
-        location={path.slice(1).charAt(0).toUpperCase() + path.slice(2)}
-      />
+      <Footer id="contatti" location="Palermo" />
     </>
   )
 }

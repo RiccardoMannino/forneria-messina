@@ -388,13 +388,7 @@ export default function MonrealePage() {
         </div>
       </Section>
 
-      <Footer
-        id="contatti"
-        location={
-          path.slice(1).charAt(0).toUpperCase() +
-          path.slice(2).replace('-', ' ').replace('m', 'M')
-        }
-      />
+      <Footer id="contatti" location="San Martino" />
     </>
   )
 }

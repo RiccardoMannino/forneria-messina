@@ -13,15 +13,6 @@ import {
 } from '@/components/ui/Select'
 import EventList from '@/components/ui/EventListItem'
 import Section from '@/components/ui/Section'
-import Image from 'next/image'
-import Pin from '@/assets/map-pin.svg'
-import Whatsapp from '@/assets/brand-whatsapp.svg'
-import Clock from '@/assets/clock.svg'
-import Facebook from '@/assets/brand-facebook.svg'
-import Instagram from '@/assets/brand-instagram.svg'
-import Trip from '@/assets/brand-tripadvisor.svg'
-import Link from 'next/link'
-import Button from '@/components/ui/Button'
 import Footer from '@/components/ui/Footer'
 
 export default function Eventi() {
