@@ -1,17 +1,19 @@
 'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import { useForm } from 'react-hook-form'
+import { usePathname, useRouter } from 'next/navigation'
 import Button from '@/components/ui/Button'
 import Section from '@/components/ui/Section'
-import Pin from '../../assets/map-pin.svg'
-import Whatsapp from '../../assets/brand-whatsapp.svg'
-import Clock from '../../assets/clock.svg'
-import Facebook from '../../assets/brand-facebook.svg'
-import Instagram from '../../assets/brand-instagram.svg'
-import Trip from '../../assets/brand-tripadvisor.svg'
 import Logo from '../../assets/logo_sanmartino.png'
-import { usePathname } from 'next/navigation'
+import ChiSiamo from '../../assets/chisiamo.jpeg'
+import Pizza from '../../assets/pizza.webp'
+import Birre from '../../assets/birre.jpeg'
+import Birra1 from '../../assets/birra1.jpeg'
+import Angus from '../../assets/angus.webp'
+import Primi from '../../assets/primi.webp'
+
 import Footer from '@/components/ui/Footer'
 
 export default function MonrealePage() {
@@ -23,6 +25,8 @@ export default function MonrealePage() {
   } = useForm()
 
   const path = usePathname()
+
+  const router = useRouter()
 
   return (
     <>
@@ -156,7 +160,7 @@ export default function MonrealePage() {
         <div className="mt-32 grid w-auto grid-cols-2 gap-10 pad:grid-cols-1">
           <div className="flex flex-col gap-6 text-center">
             <Image
-              src={'/pizza.webp'}
+              src={Pizza}
               alt="le nostre pizze"
               height={400}
               width={400}
@@ -233,7 +237,7 @@ export default function MonrealePage() {
         <div className="mt-32 grid w-auto grid-cols-2 gap-10 pad:grid-cols-1">
           <div className="flex flex-col gap-6 text-center">
             <Image
-              src={'/primi.webp'}
+              src={Primi}
               alt="primi piatti"
               height={400}
               width={400}
@@ -293,7 +297,7 @@ export default function MonrealePage() {
           <h1 className="text-center">LA BISTECCA PERFETTA</h1>
           <div className="ml-10 grid grid-cols-2 gap-6 text-center pad:mx-5 pad:grid-cols-1">
             <Image
-              src={'/angus.webp'}
+              src={Angus}
               alt="angus"
               height={400}
               width={400}
@@ -335,14 +339,14 @@ export default function MonrealePage() {
           </p>
           <div className="mt-16 flex items-center justify-center gap-10 pad:flex-col">
             <Image
-              src={'/birre.jpeg'}
+              src={Birre}
               alt="birre"
               height={400}
               width={400}
               className="self-center pad:h-auto pad:w-auto"
             />
             <Image
-              src={'/birra1.jpeg'}
+              src={Birra1}
               alt="birre"
               height={400}
               width={400}
@@ -355,7 +359,7 @@ export default function MonrealePage() {
       <Section className="mx-10 my-20 flex w-auto flex-col items-center justify-center gap-10 border-y-4 border-white py-20">
         <div className="flex w-full items-center justify-center gap-10 px-20 pad:flex-col pad:px-0">
           <Image
-            src="/chisiamo.jpeg"
+            src={ChiSiamo}
             alt="chi siamo"
             height={400}
             width={400}
@@ -381,7 +385,10 @@ export default function MonrealePage() {
               campagna, che vi riporterà ai sapori e agli odori della tradizione
               popolare monrealese, qui mai dimenticata.
             </p>
-            <Button className="flex w-fit gap-3 bg-[#FFab00] transition duration-700 hover:opacity-70 pad:self-center">
+            <Button
+              onClick={() => router.push('/chi-siamo')}
+              className="flex w-fit gap-3 bg-[#FFab00] transition duration-700 hover:opacity-70 pad:self-center"
+            >
               Scopri la nostra storia!
             </Button>
           </div>

@@ -1,6 +1,6 @@
 import { cn } from '@/lib/utils'
-import Image from 'next/image'
-import React from 'react'
+import Image, { StaticImageData } from 'next/image'
+import React, { ReactElement } from 'react'
 import { motion } from 'framer-motion'
 import { Transition } from 'framer-motion'
 
@@ -17,7 +17,7 @@ export default function Card({
   ristorante: string
   children: React.ReactNode
   className?: string
-  src: string
+  src: string | StaticImageData
   onClick?: () => void
   animate?: boolean
   initial?: boolean

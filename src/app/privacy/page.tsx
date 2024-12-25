@@ -1,11 +1,13 @@
 'use client'
 
 import Layout from '@/components/ui/Layout'
+import Section from '@/components/ui/Section'
+import Footer from '@/components/ui/Footer'
 
 export default function Privacy() {
   return (
-    <Layout>
-      <section className="my-20 flex flex-col gap-6 p-8 text-base text-white md:mx-20 md:my-20 md:text-xl">
+    <>
+      <Section className="my-20 flex flex-col gap-6 p-8 text-base text-white md:mx-20 md:my-20 md:text-xl">
         <h1 className="p-4 text-center text-lg font-bold text-[#FFab00] md:text-2xl">
           Privacy Policy
         </h1>
@@ -92,7 +94,6 @@ export default function Privacy() {
           richiesti da Forneria Messina sono obbligatori.
         </p>
         <p>
-          {' '}
           Se l’Utente rifiuta di comunicarli, potrebbe essere impossibile per
           Forneria Messina fornire il Servizio. Nei casi in cui Forneria Messina
           indichi alcuni Dati come facoltativi, gli Utenti sono liberi di
@@ -231,7 +232,6 @@ export default function Privacy() {
           qualunque altra natura indicata dall’intestazione del modulo.
         </p>
         <p>
-          {' '}
           STATISTICA I servizi contenuti nella presente sezione permettono al
           Titolare del Trattamento di monitorare e analizzare i dati di traffico
           e servono a tener traccia del comportamento dell’Utente. Google
@@ -259,7 +259,6 @@ export default function Privacy() {
           consenso in ogni momento.
         </p>
         <p>
-          {' '}
           L’Utente può revocare il consenso al trattamento dei propri Dati
           Personali precedentemente espresso. opporsi al trattamento dei propri
           Dati. L’Utente può opporsi al trattamento dei propri Dati quando esso
@@ -328,7 +327,8 @@ export default function Privacy() {
           nella misura in cui tale comportamento ha luogo all’interno
           dell’Unione.
         </p>
-      </section>
-    </Layout>
+      </Section>
+      <Footer id="contatti" location="San Martino" />
+    </>
   )
 }

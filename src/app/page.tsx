@@ -8,6 +8,8 @@ import Card from '@/components/ui/Card'
 import VideoSection from '@/components/ui/VideoSection'
 import Section from '@/components/ui/Section'
 import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards'
+import SanMartino from '../assets/logo_sanmartino.png'
+import Palermo from '../assets/logo_palermo.png'
 import Whatsapp from '../assets/brand-whatsapp.svg'
 import Trip from '../assets/brand-tripadvisor.svg'
 import Facebook from '../assets/brand-facebook.svg'
@@ -50,10 +52,10 @@ export default function IndexPage() {
       <Section
         id="ristoranti"
         className="my-20 flex w-full flex-col items-center justify-center gap-10"
-        opacity={1}
-        transition={'all ease 0.9s'}
-        transform={'none'}
-        translate={'translateX(-200px)'}
+        whileInView={{ opacity: 1 }}
+        transition="all ease 0.9s"
+        transform="none"
+        translate="translateX(-200px)"
       >
         <div className="relative top-[130px] flex flex-col gap-10">
           <h1 className="mx-auto my-8 pt-12 text-center text-4xl font-bold tracking-tighter text-white">
@@ -68,7 +70,7 @@ export default function IndexPage() {
             <Card
               ristorante="San Martino Delle Scale - Monreale"
               className="bg-[url(../assets/background_sanmartino.png)]"
-              src="/LOGO_sanmartino.png"
+              src={SanMartino}
               onClick={() => router.push('/san-martino')}
             >
               <div className="my-6 phone:text-sm">
@@ -94,7 +96,7 @@ export default function IndexPage() {
             <Card
               ristorante="Palermo"
               className="bg-[url(../assets/background_palermo.png)]"
-              src="/LOGO_PALERMO.png"
+              src={Palermo}
               onClick={() => router.push('/palermo')}
             >
               <div className="my-6 font-semibold">
@@ -125,9 +127,8 @@ export default function IndexPage() {
         transition={'all ease 0.9s'}
         transform={'none'}
         translate={'translateX(200px)'}
-        opacity={1}
+        whileInView={{ opacity: 1 }}
         className="mt-20 w-full"
-        initial={false}
       >
         <div className="mt-20 flex flex-col items-center justify-center gap-10">
           <h1 className="text-4xl font-semibold tracking-tighter text-white">

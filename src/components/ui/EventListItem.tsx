@@ -16,7 +16,7 @@ export default function EventList({
         ? eventi?.map((event) => (
             <li
               key={event.id}
-              className="h-min-42 flex flex-col items-center justify-center gap-4 rounded-lg bg-white p-4"
+              className="flex min-h-96 flex-col items-center justify-center gap-4 rounded-lg bg-white p-4"
             >
               <h2
                 className="text-center text-xl font-semibold hover:cursor-pointer"
@@ -46,7 +46,7 @@ export default function EventList({
             .map((event) => (
               <li
                 key={event.id}
-                className="h-min-42 flex h-fit flex-col items-center justify-center gap-4 rounded-lg bg-white p-4"
+                className="flex min-h-96 flex-col items-center justify-center gap-4 rounded-lg bg-white p-4"
               >
                 <h2
                   className="text-center text-xl font-semibold hover:cursor-pointer"

@@ -1,7 +1,6 @@
 'use client'
 
 import Image from 'next/image'
-import { usePathname } from 'next/navigation'
 import Footer from '@/components/ui/Footer'
 import Section from '@/components/ui/Section'
 
