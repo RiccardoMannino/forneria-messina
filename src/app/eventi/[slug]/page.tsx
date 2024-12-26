@@ -28,7 +28,11 @@ export default function Evento() {
           // Se il paragrafo contiene la parola che cerchi
           if (para.includes('PRENOTA ADESSO')) {
             return (
-              <a href="#" className="mb-4 text-wrap text-[#FFAB00]" key={index}>
+              <a
+                href="#"
+                className="mb-4 text-justify text-[#FFAB00]"
+                key={index}
+              >
                 {para}
               </a>
             )
