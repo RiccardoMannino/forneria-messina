@@ -20,7 +20,7 @@ export default function Header({ list }: { list: List }) {
         <div className="flex items-center justify-between">
           <div className="mt-4 md:flex md:items-center md:gap-12">
             <Image
-              className="relative z-20 h-auto w-auto"
+              className="pad:h-26 relative z-20 h-auto w-auto pad:w-24"
               src={Logo}
               alt="Logo Forneria"
               width={100}

@@ -20,15 +20,27 @@ export default function Evento() {
   const { slug } = useParams()
 
   const { data: eventi, isLoading, isError } = useEventoQuery(slug as string)
-  console.log(eventi?.ristorante)
-  const formatDescription = (description: string) => {
+
+  const formatDescription = (descrizione: string) => {
     const paragraphs = (
-      <div>
-        {description?.split('\n').map((para, index) => (
-          <p className="mb-4 text-justify pad:mb-8 pad:text-center" key={index}>
-            {para}
-          </p>
-        ))}
+      <div className="mt-10">
+        {descrizione?.split('\n').map((para, index) => {
+          // Se il paragrafo contiene la parola che cerchi
+          if (para.includes('PRENOTA ADESSO')) {
+            return (
+              <a href="#" className="mb-4 text-wrap text-[#FFAB00]" key={index}>
+                {para}
+              </a>
+            )
+          } else {
+            // Altrimenti ritorna il paragrafo normale
+            return (
+              <p className="mb-4 pad:mb-8 pad:text-center" key={index}>
+                {para}
+              </p>
+            )
+          }
+        })}
       </div>
     )
     return paragraphs
@@ -50,12 +62,10 @@ export default function Evento() {
           ) : (
             <p>Immagine non disponibile</p>
           )}
-          <span className="mt-10">
-            {formatDescription(eventi?.descrizione)}
-          </span>
+          {formatDescription(eventi?.descrizione)}
         </div>
       </Section>
-      <Footer eventi={eventi} id="contatti" />
+      <Footer eventi={eventi} location={eventi} id="contatti" />
     </>
   )
 }

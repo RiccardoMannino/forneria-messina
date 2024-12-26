@@ -126,7 +126,7 @@ export default function Footer({
             : 'P.iva IT05788810827'}
         </p>
       </div>
-      <div className="mt-10 flex w-auto">
+      <div className="mt-10 flex w-auto gap-10">
         <Button className="flex gap-3 border-2 border-white transition duration-1000 hover:bg-white hover:text-[#FFAB00]">
           <span>
             <Link href={'https://www.forneriashop.it'} target="_blank">
@@ -147,6 +147,20 @@ export default function Footer({
             <path d="M17 17h-11v-14h-2" />
             <path d="M6 5l14 1l-1 7h-13" />
           </svg>
+        </Button>
+        <Button className="flex gap-3 border-2 border-white transition duration-1000 hover:bg-white hover:text-[#FFAB00]">
+          <span>
+            <Link
+              href={
+                location === 'Palermo' || eventi?.ristorante === 'Palermo'
+                  ? 'https://forneriamessinapalermo.plateform.app/welcome'
+                  : 'https://forneriamessina.plateform.app/reserve'
+              }
+              target="_blank"
+            >
+              Prenota il tuo Tavolo
+            </Link>
+          </span>
         </Button>
       </div>
     </footer>

@@ -4,11 +4,11 @@ import { usePathname, useParams } from 'next/navigation'
 import { ReactNode, useEffect } from 'react'
 import Header from '@/components/ui/Header'
 import { navbarLinks, secondaryNavlinks } from '@/menus'
+import { Params } from 'next/dist/server/request/params'
 
 export default function Layout({ children }: { children: ReactNode }) {
   const pathName: string = usePathname()
-
-  const { slug } = useParams()
+  const { slug }: Params = useParams()
 
   useEffect(() => {
     if (pathName === '/') {
@@ -21,7 +21,7 @@ export default function Layout({ children }: { children: ReactNode }) {
     }
 
     if (pathName === `/eventi/${slug}`) {
-      document.title = `Forneria Messina - ${slug.charAt(0).toUpperCase()}${slug.slice(1).replace('-', ' ').replace('-', ' ')}`
+      document.title = `Forneria Messina - ${slug?.charAt(0).toUpperCase()}${slug?.slice(1).replace('-', ' ').replace('-', ' ')}`
     }
   }, [pathName, slug])
 

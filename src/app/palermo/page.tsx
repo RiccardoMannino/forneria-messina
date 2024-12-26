@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Footer from '@/components/ui/Footer'
 import Section from '@/components/ui/Section'
+import Logo from '../../assets/logo_forneria.png'
 
 export default function PalermoPage() {
   return (
@@ -81,7 +82,7 @@ export default function PalermoPage() {
       </Section>
       <Section className="mx-20 mb-10 flex gap-6 text-wrap text-white pad:flex-col pad:items-center pad:justify-center pad:text-center">
         <Image
-          src="/logo_forneria.png"
+          src={Logo}
           alt="Forneria Messina"
           width={204}
           height={210}

@@ -8,6 +8,7 @@ import Instagram from '@/assets/brand-instagram.svg'
 import Trip from '@/assets/brand-tripadvisor.svg'
 import Link from 'next/link'
 import Button from '@/components/ui/Button'
+import Footer from '@/components/ui/Footer'
 
 export default function ChiSiamo() {
   return (
@@ -123,65 +124,6 @@ export default function ChiSiamo() {
           </p>
         </div>
       </Section>
-      <footer
-        id="contatti"
-        className="flex flex-col items-center justify-center gap-4 px-4 py-8 sm:px-6"
-      >
-        <div className="flex gap-10">
-          <Image
-            src={Facebook}
-            alt="facebook"
-            width={50}
-            height={50}
-            className="cursor-pointer rounded-md transition duration-200 hover:-translate-y-1"
-          />
-          <Image
-            src={Instagram}
-            alt="Instagram}"
-            width={50}
-            height={50}
-            className="cursor-pointer rounded-md transition duration-200 hover:-translate-y-1"
-          />
-          <Image
-            src={Trip}
-            alt="Tripadvisor"
-            width={50}
-            height={50}
-            className="cursor-pointer rounded-md transition duration-200 hover:-translate-y-1"
-          />
-        </div>
-        <div className="mt-5 flex flex-col items-center justify-center gap-6 text-lg font-semibold text-[#fff]">
-          <p className="cursor-pointer transition duration-100 hover:cursor-pointer hover:text-[#FFAB00]">
-            <Link href={'/privacy'}>Privacy e cookie policy</Link>
-          </p>
-          <p className="cursor-pointer transition duration-100 hover:cursor-pointer hover:text-[#FFAB00]">
-            P.iva IT05788810827 - 07197120822
-          </p>
-        </div>
-        <div className="mt-24 w-auto">
-          <Button className="flex gap-3 border-2 border-white transition duration-1000 hover:bg-white hover:text-[#FFAB00]">
-            <span>
-              <Link href={'https://www.forneriashop.it'} target="_blank">
-                Visita il nostro Shop Online
-              </Link>
-            </span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              className="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart stroke-current transition duration-1000"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-              <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-              <path d="M17 17h-11v-14h-2" />
-              <path d="M6 5l14 1l-1 7h-13" />
-            </svg>
-          </Button>
-        </div>
-      </footer>
     </>
   )
 }

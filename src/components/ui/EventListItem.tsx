@@ -1,6 +1,13 @@
 import Image from 'next/image'
 import React from 'react'
 
+type Event = {
+  id: number
+  titolo: string
+  descrizione: string
+  immagine: string
+}
+
 export default function EventList({
   eventi,
   location,
@@ -43,7 +50,7 @@ export default function EventList({
                 evento.ristorante.trim().toLowerCase() ===
                 location.trim().toLowerCase(),
             )
-            .map((event) => (
+            .map((event: Event) => (
               <li
                 key={event.id}
                 className="flex min-h-96 flex-col items-center justify-center gap-4 rounded-lg bg-white p-4"
@@ -64,9 +71,13 @@ export default function EventList({
                 ) : (
                   <p>Immagine non disponibile</p>
                 )}
-                <p className="line-clamp-3 w-full p-2">
-                  {event.descrizione?.split('\n')}
-                </p>
+                <div className="line-clamp-3 w-full p-2">
+                  {event.descrizione?.split('\n').map((para, index) => (
+                    <p className="text-center" key={index}>
+                      {para}
+                    </p>
+                  ))}
+                </div>
               </li>
             ))}
     </>

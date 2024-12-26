@@ -29,7 +29,7 @@ export default function Eventi() {
     <>
       <Section className="mt-20 flex flex-col gap-12 p-24 pad:p-14">
         <div className="flex justify-between">
-          <h1 className="text-4xl font-bold tracking-tighter text-[#FFAB00]">
+          <h1 className="text-4xl font-bold tracking-tighter text-[#FFAB00] pad:text-3xl">
             Eventi
           </h1>
           <Select value={location} onValueChange={setLocation}>

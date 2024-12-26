@@ -2,7 +2,6 @@
 
 import { ReactNode, useRef } from 'react'
 import { useInView, motion } from 'motion/react'
-import { AnimatePresence } from 'framer-motion'
 
 interface SectionProps {
   children: ReactNode

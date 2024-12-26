@@ -52,7 +52,6 @@ export default function IndexPage() {
       <Section
         id="ristoranti"
         className="my-20 flex w-full flex-col items-center justify-center gap-10"
-        whileInView={{ opacity: 1 }}
         transition="all ease 0.9s"
         transform="none"
         translate="translateX(-200px)"
@@ -127,7 +126,6 @@ export default function IndexPage() {
         transition={'all ease 0.9s'}
         transform={'none'}
         translate={'translateX(200px)'}
-        whileInView={{ opacity: 1 }}
         className="mt-20 w-full"
       >
         <div className="mt-20 flex flex-col items-center justify-center gap-10">

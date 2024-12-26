@@ -27,7 +27,9 @@ export default function RootLayout({
   return (
     <ReactQueryClientProvider>
       <html lang="en" className="overflow-x-hidden scroll-smooth">
-        <body className={`${nunito.variable} bg-[#282828] antialiased`}>
+        <body
+          className={`${nunito.variable} overflow-x-hidden bg-[#282828] antialiased`}
+        >
           <Layout>{children}</Layout>
         </body>
       </html>
