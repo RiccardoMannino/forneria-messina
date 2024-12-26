@@ -28,13 +28,13 @@ export default function Evento() {
           // Se il paragrafo contiene la parola
           if (para.includes('PRENOTA ADESSO')) {
             return (
-              <a
+              <Link
                 href="#"
                 className="mb-4 text-justify text-[#FFAB00]"
                 key={index}
               >
                 {para}
-              </a>
+              </Link>
             )
           } else {
             // Altrimenti ritorna il paragrafo normale
