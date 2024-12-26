@@ -19,7 +19,7 @@ export default function ChiSiamo() {
           alt="Viaggio nel Gusto"
           width={400}
           height={400}
-          className="pad:h-[300px] pad:w-[300px]"
+          className="pad:h-[200px] pad:w-[200px]"
         />
         <h1 className="text-4xl font-semibold text-white pad:text-2xl">
           Viaggio nel Gusto
@@ -34,7 +34,7 @@ export default function ChiSiamo() {
         </div>
       </Section>
       <Section className="flex flex-col gap-6 bg-white shadow-[inset_0_4px_4px_rgba(0,0,0,0.6)]">
-        <div className="flex flex-col gap-6 p-14 text-3xl font-semibold pad:text-center pad:text-xl">
+        <div className="flex flex-col gap-6 p-14 text-2xl font-semibold pad:text-center pad:text-xl">
           <p>
             Quella di Forneria Messina non è soltanto la storia di un’attività
             commerciale, ma è anche e soprattutto la storia di una famiglia
@@ -124,6 +124,7 @@ export default function ChiSiamo() {
           </p>
         </div>
       </Section>
+      <Footer id="contatti" location="San Martino" />
     </>
   )
 }

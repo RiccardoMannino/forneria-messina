@@ -25,7 +25,7 @@ export default function Evento() {
     const paragraphs = (
       <div className="mt-10">
         {descrizione?.split('\n').map((para, index) => {
-          // Se il paragrafo contiene la parola che cerchi
+          // Se il paragrafo contiene la parola
           if (para.includes('PRENOTA ADESSO')) {
             return (
               <a
