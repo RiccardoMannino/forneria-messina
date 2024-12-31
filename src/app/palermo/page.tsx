@@ -4,12 +4,13 @@ import Image from 'next/image'
 import Footer from '@/components/ui/Footer'
 import Section from '@/components/ui/Section'
 import Logo from '../../assets/logo_forneria.png'
+import LogoPalermo from '../../assets/logo_palermo.png'
 
 export default function PalermoPage() {
   return (
     <>
       <div className="mt-36 flex h-[600px] w-full items-center justify-center bg-[url(../assets/background_palermo.png)] bg-cover">
-        <Image src="/LOGO_PALERMO.png" alt="Palermo" width={400} height={400} />
+        <Image src={LogoPalermo} alt="Palermo" width={400} height={400} />
       </div>
       <Section className="my-20 flex flex-col gap-6 text-white phone:mx-5 sm:mx-10 md:mx-20">
         <h1 className="mx-auto my-8 text-wrap pt-12 text-xl font-bold tracking-tighter phone:text-xl md:text-3xl">

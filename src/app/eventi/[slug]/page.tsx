@@ -20,6 +20,7 @@ export default function Evento() {
   const { slug } = useParams()
 
   const { data: eventi, isLoading, isError } = useEventoQuery(slug as string)
+  console.log(eventi?.ristorante)
 
   const formatDescription = (descrizione: string) => {
     const paragraphs = (
@@ -30,7 +31,7 @@ export default function Evento() {
             return (
               <Link
                 href="#"
-                className="mb-4 text-justify text-[#FFAB00]"
+                className="mb-4 flex text-[#FFAB00] pad:justify-center"
                 key={index}
               >
                 {para}

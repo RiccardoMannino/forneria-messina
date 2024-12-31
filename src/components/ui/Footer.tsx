@@ -12,6 +12,7 @@ import Button from '@/components/ui/Button'
 type Eventi = {
   ristorante: string
 }
+//To do: provare il reducer per eventi e location
 
 export default function Footer({
   eventi,
@@ -22,6 +23,9 @@ export default function Footer({
   id: string
   location?: string
 }) {
+  const eventLocation =
+    location === 'San Martino' || eventi?.ristorante === 'San Martino'
+
   return (
     <footer
       id={id}
@@ -32,19 +36,18 @@ export default function Footer({
       </h1>
 
       <div
-        className={`align-center grid grid-cols-3 ${location === 'Palermo' || eventi?.ristorante === 'Palermo' ? 'w-full' : ''} place-items-start gap-6 pad:grid-cols-1 pad:gap-10`}
+        className={`align-center grid w-full grid-cols-3 place-items-start gap-6 pad:grid-cols-1 pad:gap-10`}
       >
         <div className="flex flex-col items-center gap-2 place-self-stretch text-wrap font-semibold phone:text-sm md:text-base lg:text-lg">
           <Image src={Pin} alt="Indirizzo" width={50} height={50} />
           <p>Indirizzo</p>
-          {location === 'San Martino' ||
-          eventi?.ristorante === 'San Martino' ? (
+          {eventLocation ? (
             <p className="text-center">
               Viale Regione Siciliana 100
               <br /> San Martino delle Scale - Monreale 90144 Palermo (PA)
             </p>
           ) : (
-            <p>
+            <p className="text-center">
               Viale Delle Alpi 4 <br />
               90144 Palermo (PA)
             </p>
@@ -52,10 +55,9 @@ export default function Footer({
         </div>
         <div className="flex w-full flex-col items-center justify-center gap-2 text-wrap font-semibold phone:text-sm md:text-base pad:place-self-center lg:text-lg">
           <Image src={Whatsapp} alt="Indirizzo" width={50} height={50} />
-          {location === 'San Martino' ||
-          eventi?.ristorante === 'San Martino' ? (
+          <p>Recapiti</p>
+          {eventLocation ? (
             <>
-              <p>Recapiti</p>
               <p className="text-center">Tel.+39 091 418286 / +39 3338504841</p>
               <p>eventiforneriamessina@gmail.com</p>
             </>
@@ -68,10 +70,9 @@ export default function Footer({
         </div>
         <div className="flex flex-col items-center justify-center gap-2 place-self-center self-center text-wrap font-semibold phone:text-sm md:text-base lg:place-self-center lg:text-lg">
           <Image src={Clock} alt="Indirizzo" width={50} height={50} />
-          {location === 'San Martino' ||
-          eventi?.ristorante === 'San Martino' ? (
+          <p>Orari</p>
+          {eventLocation ? (
             <>
-              <p>Orari</p>
               <p>Lunedì 7.30 - 15.00</p>
               <p> Martedì Chiusi </p>
               <p>Mercoledì 07.30 - 14.00 / 16:30 - 22.30</p>
@@ -82,7 +83,6 @@ export default function Footer({
             </>
           ) : (
             <>
-              <p>Orari</p>
               <p>Lunedì-Sabato</p>
               <p>18.00-24.00</p>
               <p>Domenica</p>
@@ -161,6 +161,28 @@ export default function Footer({
               Prenota il tuo Tavolo
             </Link>
           </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            className="icon icon-tabler icons-tabler-outline icon-tabler-calendar-week stroke-current stroke-2 transition duration-1000"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" />
+            <path d="M16 3v4" />
+            <path d="M8 3v4" />
+            <path d="M4 11h16" />
+            <path d="M7 14h.013" />
+            <path d="M10.01 14h.005" />
+            <path d="M13.01 14h.005" />
+            <path d="M16.015 14h.005" />
+            <path d="M13.015 17h.005" />
+            <path d="M7.01 17h.005" />
+            <path d="M10.01 17h.005" />
+          </svg>
         </Button>
       </div>
     </footer>

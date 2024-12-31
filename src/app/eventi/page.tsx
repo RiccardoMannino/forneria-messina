@@ -33,7 +33,9 @@ export default function Eventi() {
             Eventi
           </h1>
           <Select value={location} onValueChange={setLocation}>
-            <SelectTrigger className="w-[180px] bg-white font-semibold text-[#FFAB00]">
+            <SelectTrigger
+              className={`${location === 'San Martino' ? 'pad:w-[130px]' : 'pad:w-[115px]'} w-[180px] bg-white font-semibold text-[#FFAB00]`}
+            >
               <SelectValue placeholder="Ristoranti" />
             </SelectTrigger>
             <SelectContent className="border-transparent">
@@ -62,7 +64,7 @@ export default function Eventi() {
           />
         </ul>
       </Section>
-      <Footer location={location} id="contatti" />
+      <Footer eventi={eventi} location={location} id="contatti" />
     </>
   )
 }

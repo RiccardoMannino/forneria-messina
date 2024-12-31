@@ -1,8 +1,8 @@
-import { useMemo } from "react";
-import { getSupabaseBrowserClient } from "@/utils/supabase";
+import { useMemo } from 'react'
+import { getSupabaseBrowserClient } from '@/utils/supabase'
 
 function useSupabase() {
-  return useMemo(getSupabaseBrowserClient, []);
+  return getSupabaseBrowserClient()
 }
 
-export default useSupabase;
+export default useSupabase
