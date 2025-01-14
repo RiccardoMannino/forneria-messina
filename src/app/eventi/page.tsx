@@ -64,7 +64,7 @@ export default function Eventi() {
           />
         </ul>
       </Section>
-      <Footer eventi={eventi} location={location} id="contatti" />
+      <Footer location={location} id="contatti" />
     </>
   )
 }

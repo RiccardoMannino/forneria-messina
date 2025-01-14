@@ -114,8 +114,6 @@ export default function PalermoPage() {
           <p>Insomma una proposta unica per un esperienza indimenticabile.</p>
         </div>
       </Section>
-
-      <Footer id="contatti" location="Palermo" />
     </>
   )
 }

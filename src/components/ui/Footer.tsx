@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { Dispatch } from 'react'
 import Link from 'next/link'
 import Pin from '@/assets/map-pin.svg'
 import Whatsapp from '@/assets/brand-whatsapp.svg'
@@ -12,7 +12,6 @@ import Button from '@/components/ui/Button'
 type Eventi = {
   ristorante: string
 }
-//To do: provare il reducer per eventi e location
 
 export default function Footer({
   eventi,
@@ -102,7 +101,7 @@ export default function Footer({
         />
         <Image
           src={Instagram}
-          alt="Instagram}"
+          alt="Instagram"
           width={50}
           height={50}
           className="cursor-pointer rounded-md transition duration-200 hover:-translate-y-1"
@@ -121,9 +120,7 @@ export default function Footer({
           <Link href={'/privacy'}>Privacy e cookie policy</Link>
         </p>
         <p className="cursor-pointer transition duration-100 hover:cursor-pointer hover:text-[#FFAB00]">
-          {location === 'Palermo' || eventi?.ristorante === 'Palermo'
-            ? '   P.iva 07197120822'
-            : 'P.iva IT05788810827'}
+          {eventLocation ? 'P.iva 07197120822' : 'P.iva IT05788810827'}
         </p>
       </div>
       <div className="mt-10 flex w-auto gap-10">
@@ -152,7 +149,7 @@ export default function Footer({
           <span>
             <Link
               href={
-                location === 'Palermo' || eventi?.ristorante === 'Palermo'
+                eventLocation
                   ? 'https://forneriamessinapalermo.plateform.app/welcome'
                   : 'https://forneriamessina.plateform.app/reserve'
               }

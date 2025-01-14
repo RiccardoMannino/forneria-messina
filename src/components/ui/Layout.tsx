@@ -1,7 +1,7 @@
 'use client'
 
+import React, { ReactNode, useEffect } from 'react'
 import { usePathname, useParams } from 'next/navigation'
-import { ReactNode, useEffect } from 'react'
 import Header from '@/components/ui/Header'
 import { navbarLinks, secondaryNavlinks } from '@/menus'
 import { Params } from 'next/dist/server/request/params'
