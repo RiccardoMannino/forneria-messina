@@ -1,5 +1,6 @@
 ## Forneria Messina Restaurant Website
-Viaggio nel gusto
+Replica del sito da me creato con wordpress ricreato
+qui con next.js
 
 
 
