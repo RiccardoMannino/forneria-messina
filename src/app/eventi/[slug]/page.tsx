@@ -23,7 +23,7 @@ export default function Evento() {
             return (
               <Link
                 href="#"
-                className="mb-4 flex text-[#FFAB00] pad:justify-center"
+                className="mb-4 flex text-[#FFAB00] pad:justify-center pad:text-center"
                 key={index}
               >
                 {para}
