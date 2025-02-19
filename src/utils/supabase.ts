@@ -4,12 +4,9 @@ export type TypedSupabaseClient = SupabaseClient
 let client: TypedSupabaseClient | undefined
 
 export function getSupabaseBrowserClient() {
-  if (client) {
-    return client
-  }
   client = createClient(
-    process.env.SUPABASE_URL!,
-    process.env.SUPABASE_ANON_KEY!,
+    process.env.SUPABASE_URL as string,
+    process.env.SUPABASE_ANON_KEY as string,
   )
 
   return client
