@@ -37,7 +37,7 @@ export default function Card({
         transition={transition}
       >
         <div className="z-10 flex flex-col p-4 font-semibold phonesm:truncate phonesm:text-wrap">
-          <p className="mb-6 mt-4 text-xl phonesm:text-sm">{ristorante}</p>
+          <p className="mb-6 mt-4 text-xl">{ristorante}</p>
           {children}
         </div>
 

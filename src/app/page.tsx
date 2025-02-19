@@ -72,12 +72,12 @@ export default function IndexPage() {
               src={SanMartino}
               onClick={() => router.push('/san-martino')}
             >
-              <div className="my-6 phone:text-sm">
+              <div className="my-6 text-lg">
                 <p>Via Regione Siciliana , 100</p>
                 <p>90046 San Martino Delle Scale - Monreale (PA)</p>
               </div>
               <div className="flex flex-col gap-2">
-                <p className="flex self-center">
+                <p className="flex self-center text-lg">
                   Tel. 091418286
                   <span className="ml-2">
                     <Image
@@ -89,7 +89,7 @@ export default function IndexPage() {
                     />
                   </span>
                 </p>
-                <p>eventiforneriamessina@gmail.com</p>
+                <p className="text-lg">eventiforneriamessina@gmail.com</p>
               </div>
             </Card>
             <Card
@@ -98,12 +98,12 @@ export default function IndexPage() {
               src={Palermo}
               onClick={() => router.push('/palermo')}
             >
-              <div className="my-6 font-semibold">
+              <div className="my-6 text-lg font-semibold">
                 <p>Viale Delle Alpi , 4</p>
                 <p>90144 Palermo (PA)</p>
               </div>
               <div className="flex flex-col gap-2">
-                <p className="flex self-center">
+                <p className="flex self-center text-lg">
                   Tel. 0917376696
                   <span className="ml-2">
                     <Image
@@ -115,7 +115,7 @@ export default function IndexPage() {
                     />
                   </span>
                 </p>
-                <p>messinagianmichele@gmail.com</p>
+                <p className="text-lg">messinagianmichele@gmail.com</p>
               </div>
             </Card>
           </div>
@@ -137,6 +137,7 @@ export default function IndexPage() {
               <Link
                 href="https://forneriamessina.plateform.app/reserve"
                 target="_blank"
+                className="text-lg"
               >
                 Monreale - San Martino Delle Scale
               </Link>
@@ -145,6 +146,7 @@ export default function IndexPage() {
               <Link
                 href="https://forneriamessinapalermo.plateform.app/welcome"
                 target="_blank"
+                className="text-lg"
               >
                 Palermo - Viale Delle Alpi
               </Link>
@@ -165,7 +167,7 @@ export default function IndexPage() {
               speed="slow"
             />
           </div>
-          <h1 className="mt-10 flex cursor-pointer items-center p-2.5 pb-36 text-xl font-semibold tracking-tighter text-white transition duration-150 hover:scale-110 md:text-4xl">
+          <h1 className="mt-10 flex cursor-pointer items-center p-2.5 pb-36 text-3xl font-semibold tracking-tighter text-white transition duration-150 hover:scale-110">
             <Link
               href={
                 'https://www.tripadvisor.it/Restaurant_Review-g2295464-d3626551-Reviews-Forneria_Messina-San_Martino_delle_Scale_Province_of_Palermo_Sicily.html'
@@ -216,7 +218,11 @@ export default function IndexPage() {
         <div className="mt-24 w-auto">
           <Button className="flex gap-3 border-2 border-white transition duration-1000 hover:bg-white hover:text-[#FFAB00]">
             <span>
-              <Link href={'https://www.forneriashop.it'} target="_blank">
+              <Link
+                href={'https://www.forneriashop.it'}
+                target="_blank"
+                className="text-lg"
+              >
                 Visita il nostro Shop Online
               </Link>
             </span>
