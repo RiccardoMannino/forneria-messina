@@ -60,7 +60,7 @@ export default function IndexPage() {
           <h1 className="mx-auto my-8 pt-12 text-center text-4xl font-bold tracking-tighter text-white">
             I Locali
           </h1>
-          <h2 className="mb-16 text-center text-xl font-semibold tracking-tighter text-white pad:mx-5">
+          <h2 className="mb-16 text-center text-2xl font-semibold tracking-tighter text-white pad:mx-5">
             Per orari, info e prenotazioni, clicca sulla foto del locale di tuo
             interesse
           </h2>
@@ -167,7 +167,7 @@ export default function IndexPage() {
               speed="slow"
             />
           </div>
-          <h1 className="mt-10 flex cursor-pointer items-center p-2.5 pb-36 text-3xl font-semibold tracking-tighter text-white transition duration-150 hover:scale-110">
+          <h1 className="mt-10 flex cursor-pointer items-center p-2.5 pb-36 text-center text-3xl font-semibold tracking-tighter text-white transition duration-150 hover:scale-110">
             <Link
               href={
                 'https://www.tripadvisor.it/Restaurant_Review-g2295464-d3626551-Reviews-Forneria_Messina-San_Martino_delle_Scale_Province_of_Palermo_Sicily.html'
