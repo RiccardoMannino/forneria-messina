@@ -41,10 +41,12 @@ export default function MonrealePage() {
       </Section>
       <Section className="m-20 grid grid-cols-2 gap-6 font-semibold pad:m-10 pad:grid pad:grid-cols-1">
         <div className="flex flex-col gap-6 text-lg text-white pad:text-center">
-          <h1 className="">Partecipa ai nostri eventi!</h1>
-          <h2 className="">Sei già stato alla Forneria Messina?</h2>
-          <h3 className="">Sei già iscritto alla nostra carta eventi?</h3>
-          <p className="">
+          <h1 className="text-3xl">Partecipa ai nostri eventi!</h1>
+          <h2 className="text-2xl">Sei già stato alla Forneria Messina?</h2>
+          <h3 className="text-2xl">
+            Sei già iscritto alla nostra carta eventi?
+          </h3>
+          <p className="text-xl">
             Un’irresistibile esclusiva mail dove riceverai in anteprima le date
             dei nostri eventi speciali <br />
             legati al mondo del vino delle birre artigianali e della pizza
@@ -54,7 +56,7 @@ export default function MonrealePage() {
 
         <div className="text-white pad:mt-20">
           <form className="flex h-full flex-col gap-6">
-            <p className="text-center">
+            <p className="text-center text-2xl">
               LASCIA LA TUA EMAIL QUI SOTTO E SARAI DEI NOSTRI!
             </p>
             <label>Nome</label>
@@ -139,8 +141,8 @@ export default function MonrealePage() {
         translate={'translateX(-200px)'}
         className="m-10 justify-center text-xl font-semibold text-white pad:text-base"
       >
-        <div className="flex flex-col items-center justify-center gap-6 text-center font-semibold">
-          <h1>Le nostre pizze</h1>
+        <div className="flex flex-col items-center justify-center gap-6 text-center text-lg font-semibold">
+          <h1 className="text-3xl">Le nostre pizze</h1>
           <p>
             Una pizza con gli amici è sempre molto gradita… poi se la pizza è
             leggera e digeribile ci guadagna anche la salute…
@@ -158,7 +160,7 @@ export default function MonrealePage() {
           </p>
         </div>
         <div className="mt-32 grid w-auto grid-cols-2 gap-10 pad:grid-cols-1">
-          <div className="flex flex-col gap-6 text-center">
+          <div className="flex flex-col gap-6 text-center text-lg">
             <Image
               src={Pizza}
               alt="le nostre pizze"
@@ -166,7 +168,7 @@ export default function MonrealePage() {
               width={400}
               className="h-auto w-auto self-center"
             />
-            <h1>CEREALI & SEMI</h1>
+            <h1 className="text-3xl">CEREALI & SEMI</h1>
             <p>
               Pizza scura, altamente digeribile, fonti di fibre, Omega3, sali
               minerali, vitamine e un incredibile mix di cereali e semi: farina
@@ -179,7 +181,7 @@ export default function MonrealePage() {
               ottenere una pizza dal profumo intenso, dal colore unico e dal
               gusto di tostato di una volta.
             </p>
-            <div className="flex flex-col gap-4 border-y-4 border-white">
+            <div className="flex flex-col gap-4 border-y-4 border-white text-lg">
               <p className="mt-10">
                 Nelle nostre pizze usiamo solo mozzarella fior di latte da
                 pascolo italiano.
@@ -193,20 +195,20 @@ export default function MonrealePage() {
           </div>
 
           <div className="flex flex-col items-center gap-6 pad:text-center">
-            <h1>TRA STORIA E LEGGENDA</h1>
+            <h1 className="text-3xl">TRA STORIA E LEGGENDA</h1>
             <h2>
               LA PIZZA STORICA DI &quot;SEMOLA RIMACINATA DI GRANO DURO&quot; La
               Pizza storica nasce nel 1877, era prodotta con la SEMOLA
               RIMACINATA DI GRANO DURO CON FIBRE.
             </h2>
-            <p>
+            <p className="text-lg">
               Quando i contadini e pastori della &quot;Val Gamisia&quot; (antico
               nome di San Martino delle Scale) si riunivano per produrre il Pane
               di grano duro per tutta la settimana, utilizzavano una piccola
               porzione dell’impasto che schiacciavano e cuocevano nei forni
               dell’epoca.
             </p>
-            <p>
+            <p className="text-lg">
               Oggi la SEMOLA RIMACINATA e’ un valido sostituto del grano tenero,
               ha infatti una migliore digeribilità, gusto e aroma. Rimane ancora
               oggi il prodotto antico per la vita moderna, per la tipicità, la
@@ -232,7 +234,7 @@ export default function MonrealePage() {
         className="m-20 justify-center text-xl font-semibold text-white pad:m-10 pad:text-base"
       >
         <div className="flex flex-col items-center justify-center gap-6 text-center font-semibold">
-          <h1>I PRIMI SARANNO... BUONI !!!</h1>
+          <h1 className="text-3xl">I PRIMI SARANNO... BUONI !!!</h1>
         </div>
         <div className="mt-32 grid w-auto grid-cols-2 gap-10 pad:grid-cols-1">
           <div className="flex flex-col gap-6 text-center">
@@ -243,20 +245,20 @@ export default function MonrealePage() {
               width={400}
               className="self-center pad:h-auto pad:w-auto"
             />
-            <h1>I CONSIGLI DELLO CHEF</h1>
-            <p>
+            <h1 className="text-3xl">I CONSIGLI DELLO CHEF</h1>
+            <p className="text-lg">
               Chiedi allo staff i piatti consigliati dal nostro chef, creati
               seguendo la ricerca dei profumi e sapori che la stagione ci offre.
             </p>
           </div>
 
           <div className="flex flex-col items-center gap-6 pad:text-center">
-            <p className="mt-10">
+            <p className="mt-10 text-lg">
               Una selezione di primi piatti nello stile Forneria Messina:
               ricette semplici, ma mai scontate, ed ingredienti eccellenti della
               tradizione regionale italiana.
             </p>
-            <p className="mb-10">
+            <p className="mb-10 text-lg">
               La nostra pasta fresca viene preparata con semola di grano duro e
               successivamente lavorata in trafile che la rendono ruvida in
               superficie per un maggiore assorbimento dei sughi.
@@ -281,20 +283,20 @@ export default function MonrealePage() {
         className="m-20 justify-center text-xl font-semibold text-white pad:m-10 pad:text-base"
       >
         <div className="flex flex-col items-center justify-center gap-6 text-center font-semibold">
-          <h1>Sulla Griglia</h1>
-          <p>
+          <h1 className="text-3xl">Sulla Griglia</h1>
+          <p className="text-lg">
             Sulla Griglia Lo staff della Forneria Messina lavora ogni settimana
             per selezionare le carni della più alta qualità dai migliori
             allevamenti.
           </p>
-          <p>
+          <p className="text-lg">
             La nostra missione è quella di soddisfare i palati più esigenti con
             un’attenta e accurata selezione delle migliori carni. Il risultato
             al palato è un concentrato di sapore, succulenza e tenerezza.
           </p>
         </div>
         <div className="mt-32 flex w-auto flex-col items-center justify-center gap-10">
-          <h1 className="text-center">LA BISTECCA PERFETTA</h1>
+          <h1 className="text-center text-3xl">LA BISTECCA PERFETTA</h1>
           <div className="ml-10 grid grid-cols-2 gap-6 text-center pad:mx-5 pad:grid-cols-1">
             <Image
               src={Angus}
@@ -304,8 +306,8 @@ export default function MonrealePage() {
               className="h-auto w-auto justify-self-center"
             />
             <div className="flex flex-col justify-center gap-6">
-              <h1>Costata di Scottona d&apos;Angus</h1>
-              <p className="mt-10">
+              <h1 className="text-3xl">Costata di Scottona d&apos;Angus</h1>
+              <p className="mt-10 text-lg">
                 Una selezione di primi piatti nello stile Forneria Messina:
                 ricette semplici, ma mai scontate, ed ingredienti eccellenti
                 della tradizione regionale italiana.
@@ -325,14 +327,16 @@ export default function MonrealePage() {
 
       <Section className="mx-10 my-20 flex w-auto flex-col pb-10 text-white">
         <div className="flex flex-col items-center justify-center gap-6 text-center font-semibold">
-          <h1>KRAFT BEER LE ARTIGIANALI DI CASA MESSINA</h1>
-          <p>
+          <h1 className="text-3xl">
+            KRAFT BEER LE ARTIGIANALI DI CASA MESSINA
+          </h1>
+          <p className="text-lg">
             Dalla passione di Forneria Messina verso le birre artigianali e
             dell’amicizia nata con Elia Adanti del birrificio RentOn e Iacopo
             Lenci del birrificio Bruton, sono nate quattro birre con l’idea di
             ritrovare in bicchiere ciò che avremmo voluto bere noi per primi.
           </p>
-          <p>
+          <p className="text-lg">
             Abbiamo selezionato con cura le materie prime, per mettere a punto
             ricette del tutto originali, e formulare quattro proposte diverse
             per chi vuole bere Birre artigianali esclusive.
@@ -368,7 +372,7 @@ export default function MonrealePage() {
           <div className="flex h-full w-[50%] flex-col gap-6 self-start font-semibold text-white pad:w-full pad:text-center">
             <div className="flex pad:justify-center">
               <div className="relative mr-2 mt-1 flex h-0 w-12 self-center border-b-2 border-[#FFAb00] pad:hidden"></div>
-              <h1 className="flex items-end text-xl text-[#FFAB00]">
+              <h1 className="flex items-end text-3xl text-[#FFAB00]">
                 [
                 <span className="mx-2 text-base tracking-wider text-[#fff]">
                   INARRESTABILI!
@@ -377,8 +381,8 @@ export default function MonrealePage() {
               </h1>
             </div>
 
-            <h2 className="text-lg">LA NOSTRA STORIA!</h2>
-            <p className="text-base">
+            <h1 className="text-3xl">LA NOSTRA STORIA!</h1>
+            <p className="text-lg">
               La tradizione familiare, incontra un forte legame con il
               territorio siciliano e i gusti tipici di questa fantastica terra
               per dare vita a Forneria Messina, luogo immerso in un paesaggio di

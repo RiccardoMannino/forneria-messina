@@ -13,61 +13,61 @@ export default function PalermoPage() {
         <Image src={LogoPalermo} alt="Palermo" width={400} height={400} />
       </div>
       <Section className="my-20 flex flex-col gap-6 text-white phone:mx-5 sm:mx-10 md:mx-20">
-        <h1 className="mx-auto my-8 text-wrap pt-12 text-xl font-bold tracking-tighter phone:text-xl md:text-3xl">
+        <h1 className="mx-auto my-8 text-wrap pt-12 text-3xl font-bold tracking-tighter">
           LA PIZZA E LA BISTECCA CHE NON TI ASPETTI
         </h1>
-        <p className="font-semibold phone:text-sm md:text-base lg:text-lg">
+        <p className="text-lg font-semibold">
           La Forneria Messina nel 2024 raddoppia con la nuova apertura a Palermo
           in via delle Alpi n.4, continuando a mantenere lo stesso marchio, che
           ormai è conosciuto in tutta la provincia e oltre con un numero sempre
           crescente di ospiti e amici appassionati.
         </p>
-        <p className="font-semibold phone:text-sm md:text-base lg:text-lg">
+        <p className="text-lg font-semibold">
           La pizza e la bistecca non solo sono sempre stati i piatti più amati e
           richiesti nel nostro locale ma rappresentano anche due grandi
           eccellenze gastronomiche del nostro Paese.
         </p>
-        <p className="font-semibold phone:text-sm md:text-base lg:text-lg">
+        <p className="text-lg font-semibold">
           Nel corso degli anni la Forneria Messina si è distinta per la proposta
           di prodotti di prim’ordine, una selezione di materie prime di alta
           qualità; basta poco per creare pietanze e pizze eccellenti anche
           perché la famiglia Messina ha fatto della formazione la base per la
           sua proposta.
         </p>
-        <p className="font-semibold phone:text-sm md:text-base lg:text-lg">
+        <p className="text-lg font-semibold">
           Tutto lo Staff della Forneria Messina, con passione e coraggio svolge
           una continua ricerca delle migliori materie prime, spesso poco
           conosciute ai più, al fine di soddisfare i nuovi trend di
           comportamento dei nostri ospiti che ricercano prodotti eccellenti
           proposti in forme innovative.
         </p>
-        <p className="font-semibold phone:text-sm md:text-base lg:text-lg">
+        <p className="text-lg font-semibold">
           Una cucina essenziale, senza fronzoli.
         </p>
-        <p className="font-semibold phone:text-sm md:text-base lg:text-lg">
+        <p className="text-lg font-semibold">
           Quindi succulente bistecche alla brace, stinchi di maiale alla birra,
           porchetta di qualità, baccalà Giraldo, la migliore qualità in
           assoluto, pizze con impasti particolari e topping di eccellenza.
         </p>
-        <p className="font-semibold phone:text-sm md:text-base lg:text-lg">
+        <p className="text-lg font-semibold">
           Poi tante birre artigianali alla spina, quattro a marchio Forneria
           Messina KRAFT BEER, nate dalla passione verso le birre artigianali e
           dell’amicizia con il birrificio RentOn e il birrificio Bruton, quattro
           birre prodotte con l’idea di ritrovare in bicchiere ciò che avremmo
           voluto bere noi per primi.
         </p>
-        <p className="font-semibold phone:text-sm md:text-base lg:text-lg">
+        <p className="text-lg font-semibold">
           Abbiamo selezionato con cura le materie prime, per mettere a punto
           ricette del tutto originali e formulare quattro proposte diverse per
           chi vuole bere Birre artigianali esclusive.
         </p>
-        <p className="font-semibold phone:text-sm md:text-base lg:text-lg">
+        <p className="text-lg font-semibold">
           Abbiamo deciso di puntare su questi due simboli di italianità nel
           mondo, offrendo un menu più breve per garantire ai nostri ospiti solo
           piatti realizzati con i migliori ingredienti e la massima cura: da noi
           la qualità delle materie prime è sempre garantita!
         </p>
-        <p className="font-semibold phone:text-sm md:text-base lg:text-lg">
+        <p className="text-lg font-semibold">
           Crediamo di essere il primo brand in Italia che ha deciso di
           specializzarsi unicamente in due tipologie di portate, la pizza e la
           bistecca. La Forneria Messina, nella nuova sede di Palermo con i suoi
@@ -75,7 +75,7 @@ export default function PalermoPage() {
           relax con divani in cui poter gustare le nostre birre ed ascoltare
           buona musica.
         </p>
-        <p className="font-semibold phone:text-sm md:text-base lg:text-lg">
+        <p className="text-lg font-semibold">
           Infine disponiamo di uno spazio esterno dedicato ai cocktail, sposando
           la filosofia del food pairing abbinando elementi di contrasto tra cibo
           e bevande.

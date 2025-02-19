@@ -30,14 +30,14 @@ export default function Footer({
       id={id}
       className="mt-20 flex w-full flex-col items-center justify-center gap-6 px-4 py-8 text-white"
     >
-      <h1 className="mb-10 text-center text-xl font-bold tracking-tighter phone:text-xl md:text-3xl">
+      <h1 className="mb-10 text-center text-3xl font-bold tracking-tighter">
         Contatti
       </h1>
 
       <div
         className={`align-center grid w-full grid-cols-3 place-items-start gap-6 pad:grid-cols-1 pad:gap-10`}
       >
-        <div className="flex flex-col items-center gap-2 place-self-stretch text-wrap font-semibold phone:text-sm md:text-base lg:text-lg">
+        <div className="flex flex-col items-center gap-2 place-self-stretch text-wrap text-lg font-semibold">
           <Image src={Pin} alt="Indirizzo" width={50} height={50} />
           <p>Indirizzo</p>
           {eventLocation ? (
@@ -52,7 +52,7 @@ export default function Footer({
             </p>
           )}
         </div>
-        <div className="flex w-full flex-col items-center justify-center gap-2 text-wrap font-semibold phone:text-sm md:text-base pad:place-self-center lg:text-lg">
+        <div className="flex w-full flex-col items-center justify-center gap-2 text-wrap text-lg font-semibold pad:place-self-center">
           <Image src={Whatsapp} alt="Indirizzo" width={50} height={50} />
           <p>Recapiti</p>
           {eventLocation ? (
@@ -67,7 +67,7 @@ export default function Footer({
             </>
           )}
         </div>
-        <div className="flex flex-col items-center justify-center gap-2 place-self-center self-center text-wrap font-semibold phone:text-sm md:text-base lg:place-self-center lg:text-lg">
+        <div className="flex flex-col items-center justify-center gap-2 place-self-center self-center text-wrap text-lg font-semibold lg:place-self-center">
           <Image src={Clock} alt="Indirizzo" width={50} height={50} />
           <p>Orari</p>
           {eventLocation ? (
