@@ -36,7 +36,7 @@ export default function Card({
         initial={initial}
         transition={transition}
       >
-        <div className="z-10 flex flex-col p-4 font-semibold phonesm:truncate phonesm:text-wrap">
+        <div className="z-10 flex flex-col px-0.5 py-4 font-semibold phonesm:truncate phonesm:text-wrap">
           <p className="mb-6 mt-4 text-xl">{ristorante}</p>
           {children}
         </div>
