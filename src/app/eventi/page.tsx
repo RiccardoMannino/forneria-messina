@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import useEventiQuery from '@/hooks/use-eventi-query'
 import {
@@ -15,11 +15,31 @@ import EventList from '@/components/ui/EventListItem'
 import Section from '@/components/ui/Section'
 import Footer from '@/components/ui/Footer'
 
+type ConfigData = {
+  supabaseUrl: string
+  supabaseKey: string
+}
+
 export default function Eventi() {
   const [location, setLocation] = useState('Palermo')
+  const [config, setConfig] = useState<ConfigData>({} as ConfigData)
   const { data: eventi, isLoading, isError } = useEventiQuery()
 
   const router = useRouter()
+
+  useEffect(() => {
+    const fetchConfig = async () => {
+      try {
+        const response = await fetch('/api/getConfig')
+        const data: ConfigData = await response.json()
+        setConfig(data)
+      } catch (error) {
+        console.error('Errore durante il fetch della configurazione:', error)
+      }
+    }
+
+    fetchConfig()
+  }, [])
 
   const handleClick = (slug: string) => {
     router.push(`/eventi/${slug.toLowerCase().split(' ').join('-')}`)
