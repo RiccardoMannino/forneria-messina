@@ -89,31 +89,34 @@ export default function PalermoPage() {
           height={210}
           className="xmd:w-30 pad:h-38 self-center pad:w-40 xmd:h-40"
         />
-        <div className="flex flex-col gap-0.5 text-wrap font-semibold phone:text-sm md:text-base lg:text-lg">
-          <h1 className="mt-6 phone:text-xl">
+        <div className="flex flex-col gap-5 text-wrap font-semibold">
+          <h1 className="my-10 text-3xl">
             PERCHÈ SCEGLIERE LA FORNERIA MESSINA
           </h1>
-          <p>
+          <p className="text-lg">
             L’attenzione e la cura dell&apos;ospite sono, per la Forneria
             Messina, una vera priorità.
           </p>
-          <p>
+          <p className="text-lg">
             In un ambiente ricercato, arricchito da numerosi dettagli di arredo,
             puoi vivere momenti convivali con amici e parenti, che resteranno
             nella tua memoria per sempre.
           </p>
-          <p>
+          <p className="text-lg">
             Il nostro staff, serio e professionale, sa essere al tempo stesso,
             allegro e gioioso.
           </p>
-          <p>
+          <p className="text-lg">
             Ci piace creare un’atmosfera divertente nella nostra pizzeria e
             comunicare emozioni autentiche, attraverso proposte ricercate e un
             servizio attento e curato durante tutta la permanenza.
           </p>
-          <p>Insomma una proposta unica per un esperienza indimenticabile.</p>
+          <p className="text-lg">
+            Insomma una proposta unica per un esperienza indimenticabile.
+          </p>
         </div>
       </Section>
+      <Footer id="contatti" location="Palermo" />
     </>
   )
 }
