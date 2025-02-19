@@ -21,7 +21,7 @@ export default function Layout({ children }: { children: ReactNode }) {
     }
 
     if (pathName === `/eventi/${slug}`) {
-      document.title = `Forneria Messina - ${slug?.charAt(0).toUpperCase()}${slug?.slice(1).replace('-', ' ').replace('-', ' ')}`
+      document.title = `Forneria Messina - ${(slug as string)?.charAt(0).toUpperCase()}${(slug as string)?.slice(1).replace('-', ' ').replace('-', ' ')}`
     }
   }, [pathName, slug])
 
