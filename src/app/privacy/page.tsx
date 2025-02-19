@@ -7,11 +7,11 @@ import Footer from '@/components/ui/Footer'
 export default function Privacy() {
   return (
     <>
-      <Section className="my-20 flex flex-col gap-6 p-8 text-base text-white md:mx-20 md:my-20 md:text-xl">
-        <h1 className="p-4 text-center text-lg font-bold text-[#FFab00] md:text-2xl">
+      <Section className="my-20 flex flex-col gap-6 p-8 text-base font-bold text-white md:mx-20 md:my-20">
+        <h1 className="p-4 text-center text-3xl text-[#FFab00]">
           Privacy Policy
         </h1>
-        <p>
+        <p className="text-lg">
           Privacy Policy Questa informativa sintetica è stata redatta ai sensi
           del Regolamento Europeo 679/2016 sulla Data Protection (GDPR) e
           dell’art. 13 del D.Lgs 196/2003 (Codice in materia di protezione dei
@@ -36,14 +36,14 @@ export default function Privacy() {
           dal D. Lgs 196/03 e di quanto ritenuto idoneo in relazione alla
           valutazione dei rischi che abbiamo svolto su tali trattamenti.
         </p>
-        <p>
+        <p className="text-lg">
           Forneria Messina dedica particolare attenzione alla selezione dei
           propri fornitori di servizio, in modo che rispettino e ove possibile
           superino tali livelli di sicurezza. Per la natura dei servizi che
           forniamo, parte dei trattamenti può avvenire anche al di fuori del
           territorio europeo, come meglio dettagliato più avanti.
         </p>
-        <p>
+        <p className="text-lg">
           Il conferimento dei dati personali richiesti (dati del titolare,
           ragione sociale, partita IVA, codice fiscale, dati bancari) é
           obbligatorio, in quanto una loro mancata o parziale comunicazione
@@ -73,7 +73,7 @@ export default function Privacy() {
           complessità della richiesta. Per tutti i dettagli dei trattamenti in
           essere, fate riferimento alla privacy policy sottostante.
         </p>
-        <p>
+        <p className="text-lg">
           PRIVACY POLICY DI FORNERIA MESSINA FORNERIA MESSINA raccoglie alcuni
           Dati Personali dei propri Utenti. Gli Utenti possono essere soggetti a
           livelli di protezione diversi. Alcuni Utenti godono pertanto di
@@ -93,7 +93,7 @@ export default function Privacy() {
           Forneria Messina Se non diversamente specificato, tutti i Dati
           richiesti da Forneria Messina sono obbligatori.
         </p>
-        <p>
+        <p className="text-lg">
           Se l’Utente rifiuta di comunicarli, potrebbe essere impossibile per
           Forneria Messina fornire il Servizio. Nei casi in cui Forneria Messina
           indichi alcuni Dati come facoltativi, gli Utenti sono liberi di
@@ -102,7 +102,7 @@ export default function Privacy() {
           Gli Utenti che dovessero avere dubbi su quali Dati siano obbligatori,
           sono incoraggiati a contattare il Titolare.
         </p>
-        <p>
+        <p className="text-lg">
           L’eventuale utilizzo di Cookie – o di altri strumenti di tracciamento
           – da parte di Forneria Messina o dei titolari dei servizi terzi
           utilizzati da Forneria Messina, ove non diversamente precisato, ha la
@@ -110,7 +110,7 @@ export default function Privacy() {
           ulteriori finalità descritte nel presente documento e nella Cookie
           Policy, se disponibile.
         </p>
-        <p>
+        <p className="text-lg">
           L’Utente si assume la responsabilità dei Dati Personali di terzi
           ottenuti, pubblicati o condivisi mediante Forneria Messina e
           garantisce di avere il diritto di comunicarli o diffonderli, liberando
@@ -120,7 +120,7 @@ export default function Privacy() {
           la divulgazione, la modifica o la distruzione non autorizzate dei Dati
           Personali.
         </p>
-        <p>
+        <p className="text-lg">
           Il trattamento viene effettuato mediante strumenti informatici e/o
           telematici, con modalità organizzative e con logiche strettamente
           correlate alle finalità indicate. Oltre al Titolare, in alcuni casi,
@@ -132,7 +132,7 @@ export default function Privacy() {
           comunicazione) nominati anche, se necessario, Responsabili del
           Trattamento da parte del Titolare.
         </p>
-        <p>
+        <p className="text-lg">
           L’elenco aggiornato dei Responsabili potrà sempre essere richiesto al
           Titolare del Trattamento. BASE GIURIDICA DEL TRATTAMENTO Il Titolare
           tratta Dati Personali relativi all’Utente in caso sussista una delle
@@ -143,7 +143,7 @@ export default function Privacy() {
           specificate di seguito, fino a quando l’Utente non si opponga
           (“opt-out”) a tale trattamento.
         </p>
-        <p>
+        <p className="text-lg">
           Ciò non è tuttavia applicabile qualora il trattamento di Dati
           Personali sia regolato dalla legislazione europea in materia di
           protezione dei Dati Personali; il trattamento è necessario
@@ -155,7 +155,7 @@ export default function Privacy() {
           trattamento è necessario per il perseguimento del legittimo interesse
           del Titolare o di terzi.
         </p>
-        <p>
+        <p className="text-lg">
           E’ comunque sempre possibile richiedere al Titolare di chiarire la
           concreta base giuridica di ciascun trattamento ed in particolare di
           specificare se il trattamento sia basato sulla legge, previsto da un
@@ -166,7 +166,7 @@ export default function Privacy() {
           dell’Utente potrebbero essere trasferiti in un paese diverso da quello
           in cui l’Utente si trova.
         </p>
-        <p>
+        <p className="text-lg">
           Per ottenere ulteriori informazioni sul luogo del trattamento l’Utente
           può fare riferimento alla sezione relativa ai dettagli sul trattamento
           dei Dati Personali. In caso di superiore protezione, l’Utente ha
@@ -176,7 +176,7 @@ export default function Privacy() {
           costituita da due o più paesi, come ad esempio l’ONU, nonché in merito
           alle misure di sicurezza adottate dal Titolare per proteggere i Dati.
         </p>
-        <p>
+        <p className="text-lg">
           Qualora abbia luogo uno dei trasferimenti appena descritti, l’Utente
           può fare riferimento alle rispettive sezioni di questo documento o
           chiedere informazioni al Titolare contattandolo agli estremi riportati
@@ -184,30 +184,30 @@ export default function Privacy() {
           conservati per il tempo richiesto dalle finalità per le quali sono
           stati raccolti.
         </p>
-        <p>
+        <p className="text-lg">
           Pertanto: I Dati Personali raccolti per scopi collegati all’esecuzione
           di un contratto tra il Titolare e l’Utente saranno trattenuti sino a
           quando sia completata l’esecuzione di tale contratto.
         </p>
-        <p>
+        <p className="text-lg">
           I Dati Personali raccolti per finalità riconducibili all’interesse
           legittimo del Titolare saranno trattenuti sino al soddisfacimento di
           tale interesse. L’Utente può ottenere ulteriori informazioni in merito
           all’interesse legittimo perseguito dal Titolare nelle relative sezioni
           di questo documento o contattando il Titolare.
         </p>
-        <p>
+        <p className="text-lg">
           Quando il trattamento è basato sul consenso dell’Utente, il Titolare
           può conservare i Dati Personali più a lungo sino a quando detto
           consenso non venga revocato.
         </p>
-        <p>
+        <p className="text-lg">
           Inoltre il Titolare potrebbe essere obbligato a conservare i Dati
           Personali per un periodo più lungo in ottemperanza ad un obbligo di
           legge o per ordine di un’autorità. Al termine del periodo di
           conservazioni i Dati Personali saranno cancellati.
         </p>
-        <p>
+        <p className="text-lg">
           Pertanto, allo spirare di tale termine il diritto di accesso,
           cancellazione, rettificazione ed il diritto alla portabilità dei Dati
           non potranno più essere esercitati. Finalità del Trattamento dei Dati
@@ -217,13 +217,13 @@ export default function Privacy() {
           l’Utente, Visualizzazione di contenuti da piattaforme esterne e
           Monitoraggio dell’infrastruttura.
         </p>
-        <p>
+        <p className="text-lg">
           Per ottenere ulteriori informazioni dettagliate sulle finalità del
           trattamento e sui Dati Personali concretamente rilevanti per ciascuna
           finalità, l’Utente può fare riferimento alle relative sezioni di
           questo documento.
         </p>
-        <p>
+        <p className="text-lg">
           Dettagli sul trattamento dei Dati Personali I Dati Personali sono
           raccolti per le seguenti finalità ed utilizzando i seguenti servizi:
           CONTATTARE L’UTENTE Modulo di contatto L’Utente, compilando con i
@@ -231,25 +231,25 @@ export default function Privacy() {
           rispondere alle richieste di informazioni, di preventivo, o di
           qualunque altra natura indicata dall’intestazione del modulo.
         </p>
-        <p>
+        <p className="text-lg">
           STATISTICA I servizi contenuti nella presente sezione permettono al
           Titolare del Trattamento di monitorare e analizzare i dati di traffico
           e servono a tener traccia del comportamento dell’Utente. Google
           Analytics (Google Inc.) Google Analytics è un servizio di analisi web
           fornito da Google Inc. (“Google”).
         </p>
-        <p>
+        <p className="text-lg">
           Google utilizza i Dati Personali raccolti allo scopo di tracciare ed
           esaminare l’utilizzo di NOME AZIENDA, compilare report e condividerli
           con gli altri servizi sviluppati da Google.
         </p>
-        <p>
+        <p className="text-lg">
           Google potrebbe utilizzare i Dati Personali per contestualizzare e
           personalizzare gli annunci del proprio network pubblicitario. Dati
           Personali raccolti: Cookie e Dati di utilizzo. Luogo del trattamento:
           USA Privacy Policy Opt Out.
         </p>
-        <p>
+        <p className="text-lg">
           Diritti dell’Utente Gli Utenti possono esercitare determinati diritti
           con riferimento ai Dati trattati dal Titolare. In caso di superiore
           protezione, l’Utente può esercitare tutti i diritti riportati di
@@ -258,7 +258,7 @@ export default function Privacy() {
           esercitarli. In particolare, l’Utente ha il diritto di: revocare il
           consenso in ogni momento.
         </p>
-        <p>
+        <p className="text-lg">
           L’Utente può revocare il consenso al trattamento dei propri Dati
           Personali precedentemente espresso. opporsi al trattamento dei propri
           Dati. L’Utente può opporsi al trattamento dei propri Dati quando esso
@@ -271,7 +271,7 @@ export default function Privacy() {
           e richiederne l’aggiornamento o la correzione. ottenere la limitazione
           del trattamento.
         </p>
-        <p>
+        <p className="text-lg">
           Quando ricorrono determinate condizioni, l’Utente può richiedere la
           limitazione del trattamento dei propri Dati. In tal caso il Titolare
           non tratterà i Dati per alcun altro scopo se non la loro
@@ -280,7 +280,7 @@ export default function Privacy() {
           richiedere la cancellazione dei propri Dati da parte del Titolare.
           ricevere i propri Dati o farli trasferire ad altro titolare.
         </p>
-        <p>
+        <p className="text-lg">
           L’Utente ha diritto di ricevere i propri Dati in formato strutturato,
           di uso comune e leggibile da dispositivo automatico e, ove
           tecnicamente fattibile, di ottenerne il trasferimento senza ostacoli
@@ -291,7 +291,7 @@ export default function Privacy() {
           proporre un reclamo all’autorità di controllo della protezione dei
           dati personali competente o agire in sede giudiziale.
         </p>
-        <p>
+        <p className="text-lg">
           DETTAGLI SUL DIRITTO DI OPPOSIZIONE Quando i Dati Personali sono
           trattati nell’interesse pubblico, nell’esercizio di pubblici poteri di
           cui è investito il Titolare oppure per perseguire un interesse
@@ -301,14 +301,14 @@ export default function Privacy() {
           finalità di marketing diretto, possono opporsi al trattamento senza
           fornire alcuna motivazione.
         </p>
-        <p>
+        <p className="text-lg">
           Per scoprire se il Titolare tratti dati con finalità di marketing
           diretto gli Utenti possono fare riferimento alle rispettive sezioni di
           questo documento. COME ESERCITARE I DIRITTI Per esercitare i diritti
           dell’Utente, gli Utenti possono indirizzare una richiesta agli estremi
           di contatto del Titolare indicati in questo documento.
         </p>
-        <p>
+        <p className="text-lg">
           Le richieste sono depositate a titolo gratuito e evase dal Titolare
           nel più breve tempo possibile, in ogni caso entro un mese.
           Applicabilità del livello superiore di protezione Mentre la maggior
@@ -317,7 +317,7 @@ export default function Privacy() {
           all’applicabilità di un livello superiore di protezione al trattamento
           di Dati Personali.
         </p>
-        <p>
+        <p className="text-lg">
           Tale livello superiore di protezione è sempre garantito quando il
           trattamento: è eseguito da un Titolare con sede nella UE; riguarda
           Dati Personali di Utenti che si trovano nella UE ed è funzionale
