@@ -5,7 +5,6 @@ import { Nunito_Sans } from 'next/font/google'
 import Layout from '@/components/ui/Layout'
 
 import { ReactQueryClientProvider } from '@/components/ReactQueryClientProvider'
-import { AnimatePresence } from 'framer-motion'
 
 const nunito = Nunito_Sans({
   subsets: ['latin'],
