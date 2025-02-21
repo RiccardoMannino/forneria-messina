@@ -22,12 +22,12 @@ export default function LavoraConNoi() {
           className="w-full"
         />
       </Section>
-      <Section className="flex w-full p-10">
+      <Section className="flex w-full p-4">
         <article className="flex flex-col items-center justify-center gap-10">
           <h1 className="mb-10 text-3xl font-semibold text-[#FFab00]">
             Lavora con noi
           </h1>
-          <div className="flex flex-col justify-center gap-4 text-xl font-semibold text-white pad:text-center">
+          <div className="flex flex-col justify-center gap-4 text-center text-xl font-semibold text-white">
             <p> Vuoi entrare a far parte dello staff di Forneria Messina?</p>
             <p>Inviaci la tua candidatura!</p>
             <p>Ciao.</p>
