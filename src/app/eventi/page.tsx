@@ -33,7 +33,6 @@ export default function Eventi() {
         const response = await fetch('/api/getConfig')
         const data: ConfigData = await response.json()
         setConfig(data)
-        console.log('ci siamo fino a qua?')
       } catch (error) {
         console.error('Errore durante il fetch della configurazione:', error)
       }
