@@ -127,7 +127,7 @@ export default function Footer({
         <Button className="flex gap-3 border-2 border-white transition duration-1000 hover:bg-white hover:text-[#FFAB00]">
           <span>
             <Link href={'https://www.forneriashop.it'} target="_blank">
-              Visita il nostro Shop Online
+              Shop Online
             </Link>
           </span>
           <svg
