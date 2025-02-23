@@ -124,7 +124,7 @@ export default function Footer({
         </p>
       </div>
       <div className="mt-10 flex w-auto gap-10">
-        <Button className="flex gap-3 border-2 border-white transition duration-1000 hover:bg-white hover:text-[#FFAB00]">
+        <Button className="flex items-center gap-3 border-2 border-white transition duration-1000 hover:bg-white hover:text-[#FFAB00]">
           <span>
             <Link href={'https://www.forneriashop.it'} target="_blank">
               Shop Online
@@ -132,8 +132,8 @@ export default function Footer({
           </span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
+            width="30"
+            height="30"
             viewBox="0 0 24 24"
             fill="none"
             className="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart stroke-current stroke-2 transition duration-1000"
@@ -145,7 +145,7 @@ export default function Footer({
             <path d="M6 5l14 1l-1 7h-13" />
           </svg>
         </Button>
-        <Button className="flex gap-3 border-2 border-white transition duration-1000 hover:bg-white hover:text-[#FFAB00]">
+        <Button className="flex items-center gap-3 border-2 border-white transition duration-1000 hover:bg-white hover:text-[#FFAB00]">
           <span>
             <Link
               href={
@@ -160,8 +160,8 @@ export default function Footer({
           </span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
+            width="30"
+            height="30"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
