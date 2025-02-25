@@ -2,13 +2,6 @@ import Section from '@/components/ui/Section'
 import Image from 'next/image'
 import Work from '../../assets/lavora_con_noi.jpg'
 import Link from 'next/link'
-import Pin from '@/assets/map-pin.svg'
-import Whatsapp from '@/assets/brand-whatsapp.svg'
-import Clock from '@/assets/clock.svg'
-import Facebook from '@/assets/brand-facebook.svg'
-import Instagram from '@/assets/brand-instagram.svg'
-import Trip from '@/assets/brand-tripadvisor.svg'
-import Button from '@/components/ui/Button'
 import Footer from '@/components/ui/Footer'
 
 export default function LavoraConNoi() {
@@ -28,7 +21,7 @@ export default function LavoraConNoi() {
           <h1 className="mb-10 text-3xl font-semibold text-[#FFab00]">
             Lavora con noi
           </h1>
-          <div className="flex flex-col justify-center gap-4 text-center text-xl font-semibold text-white">
+          <div className="flex flex-col justify-center gap-4 text-lg font-semibold text-white phone:text-center">
             <p> Vuoi entrare a far parte dello staff di Forneria Messina?</p>
             <p>Inviaci la tua candidatura!</p>
             <p>Ciao.</p>
@@ -39,8 +32,12 @@ export default function LavoraConNoi() {
             <p>
               Siamo alla ricerca di persone volenterose, appassionate e
               intraprendenti per riempire le nuove fila all’interno della nostra
-              FORNERIA! Per alcune posizioni ricerchiamo esperienza, un buon
-              curriculum e un passato luccicante.
+              FORNERIA!
+            </p>
+            <p>
+              {' '}
+              Per alcune posizioni ricerchiamo esperienza, un buon curriculum e
+              un passato luccicante.
             </p>
             <p>
               Per altre posizioni cerchiamo attitudine, voglia di imparare e di
