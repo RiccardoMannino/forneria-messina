@@ -43,7 +43,7 @@ export default function Footer({
           {eventLocation ? (
             <p className="text-center">
               Viale Regione Siciliana 100
-              <br /> San Martino delle Scale - Monreale 90144 Palermo (PA)
+              <br /> San Martino delle Scale - 90046 Monreale (PA)
             </p>
           ) : (
             <p className="text-center">
